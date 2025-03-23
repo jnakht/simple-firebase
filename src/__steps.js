@@ -10,4 +10,7 @@
  * 9. Login.jsx: import getAuth from firebase/auth
  * 10. create const auth = getAuth(app)
  * 11. import googleAuthProvider and create new authProvider
+ * 12. use signInWithPopUp and pass auth and provider
+ * 13. activate sign in method: Build > sign-in-method > (google, facebook, etc) > activate
+ * 14. replace 127.0.0.1 ip address with localhost, it is validated by  firebase even though both are same
  *  */
