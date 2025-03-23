@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Home from "../components/Home/Home";
+import Header from "../components/Header/Header";
 
 
-const Layout = () => {
+const Main = () => {
     return (
         <div>
-            <Home></Home>
+            <Header></Header>
             <Outlet></Outlet>
         </div>
     );
 };
 
-export default Layout;
+export default Main;

@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
     return (
-        <div>
-            <h3>This  is header</h3>
+        <div style={{display: 'flex', gap: '20px', margin: '20px'}}>
+            <Link to='/'>Home</Link>
+            <Link to='/login'>Login</Link>
         </div>
     );
 };
