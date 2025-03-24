@@ -29,13 +29,15 @@ const Login = () => {
     }
     return (
         <div>
-            <button onClick={handleGoogleSignIn} className="btn">Google Login</button>
-            <button onClick={handleSignOut}>Sign Out</button>
+        {user ? <button onClick={handleSignOut}>Sign Out</button> 
+        :
+        <button onClick={handleGoogleSignIn}>Google Login</button>}
+        
             {
-                user && <div>
+                user && <div style={{border: '2px solid red'}}>
                 <h3>User: {user.displayName}</h3>
                 <p>Email: {user.email}</p>
-                <img src={user.photoURL} alt="" />
+                <img style={{border: '2px solid green', width: '200px', height: '200px'}} src={user.photoURL} alt="" />
                 </div>
             }
         </div>
